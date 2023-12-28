@@ -1,0 +1,46 @@
+/* 
+
+.toggle-container{
+    width:5rem;
+    height:2rem;
+    border-radius:2rem;
+    border:1px solid black;
+    padding:2px;
+    transition:1s;
+}
+
+.btn{
+    width:2rem;
+    border-radius:50%;
+    background:red;
+    height:2rem;
+    transition:1s;
+
+}
+.toggle{
+    transform:translate(2.9rem);
+    transition:1s;
+    background:blue;
+
+}
+.back{
+    background:gray;
+    transition:1s;
+} */
+
+#infi-list {
+  width: 200px;
+  height: 300px;
+  overflow: auto;
+
+  margin: 30px;
+  padding: 20px;
+  border: 10px solid black;
+}
+li {
+  padding: 10px;
+  list-style-type: none;
+}
+li:hover {
+  background: #ccc;
+}
