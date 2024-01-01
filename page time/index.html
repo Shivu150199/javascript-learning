@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.section{
+
+}
+.modal{
+background-color: rgb(178, 22, 22);
+width:20rem;
+height:10rem;
+/* display: none; */
+}
+
+.active{
+    display:inline-block;
+}
+</style>
+
+</head>
+
+
+<body>
+<!-- <h1>timer</h1>
+<p id="timer"></p> -->
+<div class="section">
+<button id="btn">Open Modal</button>
+</div>
+
+
+    <script>
+btn.addEventListener('click',openModal)
+
+function openModal(){
+let parentDiv=document.createElement('div');
+parentDiv.className='modal';
+let childDiv=document.createElement('div');
+childDiv.className='child';
+childDiv.innerHTML=`<h1>open Modal</h1>`
+let para=document.createElement('p');
+para.className='para';
+para.innerText='here is you modal';
+let close=document.createElement('button');
+close.innerText='close';
+close.className='btn-close';
+
+parentDiv.append(childDiv,para,close)
+
+document.body.appendChild(parentDiv)
+
+// document.body.append(modalContainer)
+
+}
+
+
+// let startTime=0;
+// let endTime=0;
+// let seconds=0;
+// let isTracking=false
+// let timerInterval;
+// let currentTime=new Date().getTime()
+// let realTime=(currentTime/1000).toFixed()
+// let time=Date.now()
+// console.log(time)
+// console.log(((time-startTime)/1000).toFixed())
+
+// let intervalId = setInterval(function() {
+ 
+// }, 1000);
+// console.log(realTime)
+
+// // console.log(intervalId)
+// function updateTimer() {
+//   seconds++;
+//   result.innerText=`i have spend ${seconds} in this website`
+//   console.log(seconds)
+//   if (seconds >= 60) {
+//     seconds = 0;
+//     minutes++;
+//     if (minutes >= 60) {
+//       minutes = 0;
+//       hours++;
+//     }
+//   }
+// }
+
+
+// function startTimer() {
+//   timerInterval = setInterval(updateTimer, 1000);
+// }
+// startTimer()
+
+// let day=new Date().getDate()
+// let month=new Date().getMonth()+1
+// let year=new Date().getFullYear()
+// let hour=new Date().getHours()
+// let minutes=new Date().getMinutes()
+// let seconds=new Date().getSeconds();
+// console.log(day)
+// console.log(month)
+// console.log(year)
+// console.log(hour)
+// console.log(minutes)
+// console.log(seconds)
+
+// timer.innerText=`${day}/${month}/${year},${hour}:${minutes}:${seconds}`
+
+    </script>
+</body>
+</html>

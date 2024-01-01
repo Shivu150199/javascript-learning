@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+#root{
+    display:grid;
+    
+    background:#232529;
+    grid-template-columns:2fr 5fr;
+    width:100vw;
+    height:100vh;
+}
+.form{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+      background:#282a36;
+      padding:1rem;
+}
+form{
+    display:flex;
+    flex-direction:column;
+  
+    gap:2rem;
+    margin-top:2rem;
+    height:100%;
+}
+input{
+    padding:.5rem;
+}
+.submit-btn{
+    
+
+}
+
+
+table{
+    width:100%;
+    padding:1rem;
+    color:white;
+}
+
