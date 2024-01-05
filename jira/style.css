@@ -1,0 +1,78 @@
+  body {
+        background-color:aliceblue;
+      }
+      #root {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem;
+      }
+      .container {
+        width: 300px;
+        min-width: 300px;
+        height: 400px;
+        background-color:whitesmoke
+        ;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* flex-wrap: wrap; */
+        padding: 10px;
+      }
+
+      .container > h3 {
+        color: gray;
+      }
+      .create-btn {
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        gap: 5px;
+        /* justify-content: center; */
+        color: #182a4d;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: capitalize;
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      .create-btn:hover {
+        background-color: lightgrey;
+      }
+      .issue-input {
+        padding: 10px;
+        border: none;
+        resize: none;
+        border-radius: 0.5rem;
+      }
+      .issue-input:focus {
+        outline: 1px solid #388bff;
+      }
+      .hide {
+        display: none;
+      }
+      .cards-container {
+        /* background-color:rgb(253, 203, 210); */
+
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        overflow: scroll;
+        width: 100%;
+      }
+      .card {
+        background-color: white;
+        padding: 20px 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+      }
+    
+      ::-webkit-scrollbar {
+        display: none;
+      }

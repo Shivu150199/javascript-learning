@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root" class="root">
+      <div class="container" id="todo">
+        <h3>TO DO</h3>
+        <button class="create-btn">
+          <span class="material-icons"> add </span> <span>create Issue</span>
+        </button>
+        <input
+          class="issue-input hide"
+          placeholder="write your issue"
+          type="text"
+        />
+        <div class="cards-container" id="todo_container">
+          <div class="card" draggable="true">
+            <b>app ui funcitonality</b>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="inProgress">
+        <h3>IN Progress</h3>
+      </div>
+      <div class="container" id="done">
+        <h3>Done</h3>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="drag&drop.js"></script>
+  </body>
+</html>
