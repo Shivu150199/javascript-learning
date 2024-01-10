@@ -1,15 +1,10 @@
-console.log('start')
-// setTimeout(()=>{
-//     console.log('mid')
-// },500)
+let obj1 = {
+  name: 'prashant',
+  age: 23,
+}
 
-// console.log('end')
 
-// // first print the start then end then mid
-// // if change the time to 0 what will be the output;
-// console.log('start')
-// setTimeout(() => {
-//   console.log('mid')
-// },0)
-
-// console.log('end')
+let obj2 = {
+  qualification: 'BSC CS',
+  loves: 'Javascript',
+}

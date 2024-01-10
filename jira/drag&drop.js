@@ -4,15 +4,20 @@ console.log(container)
 
 
 ////!SECTION
+const draggingInfo={
+    sourceContainerId:null,
+
+    draggingElement:null, 
+}
+
+
 function ondragover(e){
     e.preventDefault();
 
 }
-function onDragStart(){
-    console.log(
-        'draggin start'
-    )
-}
+function onDragStart(event){
+   draggingInfo.sourceContainerId=event.target.getAttribute('data-container')
+} 
 
 function dropOn(){
     console.log('drop')
