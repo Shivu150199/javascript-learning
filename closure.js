@@ -37,3 +37,4 @@
 
 // javascript iterator
 
+// Set time out has the callibre to excecute a function after a given time   
