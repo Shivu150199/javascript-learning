@@ -1,15 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+    <style>
+      #grandParent {
+        width: 600px;
+        height: 600px;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #parents {
+        width: 400px;
+        height: 400px;
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #grandChild {
+        width: 200px;
+        height: 200px;
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grandParent">
+     
+      <div id="parents">
+        
+        <div id="grandChild"></div>
+      </div>
+    </div>
 
-    <script src="promise.js">
+    <!-- <script src="promise.js"> -->
 
-    </script>
-</body>
+    <!-- </script> -->
+  </body>
+  <script src="event.js"></script>
 </html>

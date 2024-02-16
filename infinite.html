@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #infi-list {
+        width: 200px;
+        height: 300px;
+        overflow: auto;
+
+        margin: 30px;
+        padding: 20px;
+        border: 10px solid black;
+      }
+      li {
+        padding: 10px;
+        list-style-type: none;
+      }
+      li:hover {
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Infinite Scroll</h2>
+    <main>
+      <ol id="infi-list"></ol>
+    </main>
+    <script>
+      console.log(this)
+      let container = document.querySelector('#infi-list')
+      console.log(container)
+      // console.log(container.pageXOffset)
+      // let count=0
+      // for(;count<=10;count++){
+      //   let div =document.createElement('li')
+      //   div.innerText = `item ${count}`
+      //   container.appendChild(div)
+      // }
+
+      // container.addEventListener('scroll',()=>{
+      //   let scrolledHeight=container.scrollTop
+      // //   console.log(scrolledHeight)
+      // //   console.log(container.scrollHeight)
+      // //   console.log(container.clientHeight)
+      //   let maxScrollHeight = container.scrollHeight - container.clientHeight
+      //   console.log(maxScrollHeight)
+      //   if(maxScrollHeight-scrolledHeight<=5){
+      //     console.log('hello')
+      //  addTwo()
+      //   }
+      // })
+
+      // function addTwo(){
+      //   let div1 = document.createElement('li')
+      //   div1.innerText = `item ${count++}`
+      //   container.appendChild(div1)
+      //   let div2 = document.createElement('li')
+      //   div2.innerText = `item ${count++}`
+      //   container.appendChild(div2)
+      // }
+    </script>
+  </body>
+</html>

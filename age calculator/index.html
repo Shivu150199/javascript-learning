@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="date" id="userInput" />
+    <button class="btn" id="btn">submit</button>
+    <script>
+      btn.addEventListener('click', () => {
+        const value = userInput.value
+        console.log(value)
+        const dob = new Date(value)
+        console.log(dob)
+        const dobYear = dob.getFullYear()
+        console.log(dobYear)
+        const dobMonth = dob.getMonth()
+        console.log(dobMonth)
+        const dobDate = dob.getDate()
+        console.log(dobDate)
+        const now = new Date()
+        var currentYear = now.getFullYear()
+        var currentMonth = now.getMonth()
+        var currentDate = now.getDate()
+        console.log(currentYear)
+        console.log(currentMonth)
+        console.log(currentDate)
+        let yearAge = currentYear - dobYear
+        let monthAge
+        let dateAge
+        if (currentMonth >= dobMonth) {
+          monthAge = currentMonth - dobMonth
+        } else {
+          yearAge--
+          monthAge = 12 + currentMonth - dobMonth
+        }
+        if (currentDate >= dobDate) {
+          dateAge = currentDate - dobDate
+        } else {
+          monthAge--
+          dateAge = 31 + currentDate - dobDate
+          if (monthAge <= 0) {
+            monthAge = 11
+            yearAge--
+          }
+        }
+
+        console.log('years', yearAge)
+        console.log('month', monthAge)
+        console.log('date', dateAge)
+      })
+
+    </script>
+  </body>
+</html>

@@ -61,3 +61,6 @@ function step3(data){
 }
 
 step1().then((data1)=>step2(data1)).then((data2)=>step3(data2)).then((data3)=>console.log(data3))
+
+
+
