@@ -31,36 +31,47 @@
 // })
 
 
-function step1(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log('step1 .....')
-            let data={...data,step1:'Boil Water'}
-            resolve(data)
-        },2000) 
-    })
+// function step1(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log('step1 .....')
+//             let data={...data,step1:'Boil Water'}
+//             resolve(data)
+//         },2000) 
+//     })
+// }
+
+// function step2(data){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log('step2.....')
+//             data={...data,step2:'put maggi'}
+//             resolve(data)
+//         },2000)
+//     })
+// }
+// function step3(data){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log('step3.....')
+//             data={...data,step2:'maggi ready'}
+//             resolve(data)
+//         },2000)
+//     })
+// }
+
+// step1().then((data1)=>step2(data1)).then((data2)=>step3(data2)).then((data3)=>console.log(data3))
+
+
+
+const f1=async()=>{
+    const data=await p1;
+
+    console.log(data)
+
+
 }
+f1()
+// async function f2(){
 
-function step2(data){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log('step2.....')
-            data={...data,step2:'put maggi'}
-            resolve(data)
-        },2000)
-    })
-}
-function step3(data){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log('step3.....')
-            data={...data,step2:'maggi ready'}
-            resolve(data)
-        },2000)
-    })
-}
-
-step1().then((data1)=>step2(data1)).then((data2)=>step3(data2)).then((data3)=>console.log(data3))
-
-
-
+// }
